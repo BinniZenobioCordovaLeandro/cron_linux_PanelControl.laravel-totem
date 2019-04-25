@@ -175,6 +175,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        /*
+        * TotemServiceProvider
+        */
+        Studio\Totem\Providers\TotemServiceProvider::class,
     ],
 
     /*
