@@ -25,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Totem::auth(function ($request) {
+            // return true / false . For e.g.
+            return true;
+            return Auth::check();
+        });
         // solution to comflict with database utf8 unicode ci
         Schema::defaultStringLength('191');
     }
